@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    user-select: none;
+}
+
+body{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    overflow-x:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100vw;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #444;
+}
+
+#navbar .logo{
+    position: relative;
+    top: -5px;
+    left: -10px;
+    height: 80px;
+}
+#navbar .logo img{
+    height: 100%;
+}
+
+#container-1{
+    position: relative;
+    top: 50px;
+    left: 0px;
+    height: 550px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-1 .slider{
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#container-1 .slider .main-slider{
+    position: absolute;
+    height: 100%;
+    width: 400%;
+    display: flex;
+}
+#container-1 .slider .main-slider .slide{
+    height: 100%;
+    width: 100%;
+    transition: 0.6s linear;
+}
+#container-1 .slider .main-slider .slide .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    mix-blend-mode: overlay;
+}
+
+#container-1 .slider .matter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    height: 100%;
+    width: 550px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 3;
+}
+#container-1 .slider .matter::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    filter: blur(4px);
+}
+
+#container-1 .slider .matter h1{
+    font-size: 110px;
+    margin-top: -100px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.9s cubic-bezier(0.53,-0.2, 0, 0.9);
+    text-transform: capitalize;
+}
+#container-1 .slider .matter h1 span{
+    color: orange;
+}
+
+#container-1 .slider .matter p{
+    font-size: 18px;
+    width: 450px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: 0.9s cubic-bezier(0.53,-0.2, 0, 0.9);
+}
+
+
+
+#container-2{
+    position: absolute;
+    top: 550px;
+    left: 0px;
+    margin-top: 50px;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#container-2 h1{
+    position: absolute;
+    top: 20px;      
+    margin-left: 10px;
+    font-size: 50px;
+}
+#container-2 h1::before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: orange;
+}
+
+#container-2 .matter-container{
+    position: absolute;
+    top:140px;
+    padding-left: 10px;
+    height: 300px;
+    width: 50vw;
+    background-color: #eee;
+}
+#container-2 .matter-container h2{
+    font-size: 45px;
+    text-align: center;
+}
+#container-2 .matter-container::before{
+    content: "Our vision or motive is to reduce the gap between learning enthusiast, artists, painters, creative designers and all that crazy audience who have good taste in art, craft and designing. We want to motivate enthusiastic and energetic people who are ready to learn and implement things and who can go to any level  make their dreams come true and alive. We follow bone simple rules Learn-Create-Connect-Grow.";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 150px;
+    width: 80vw;
+    background-color: #fff;
+    padding-left: 20px;
+    box-shadow: 0px 0px 5px #888;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui;
+}
+
+
+#container-3{
+    position: absolute;
+    top: 1100px;
+    left: 10px;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#container-3 h1{
+    position: absolute;
+    top: 40px;
+    font-size: 50px;
+}
+#container-3 h1::before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: orange;
+}
+
+
+#container-3 .boxes{
+    position: absolute;
+    top: 150px;
+    height: 550px;
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#container-3 .boxes > div{
+    height: 240px;
+    width: 280px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px #ddd;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+#container-3 .boxes > div:hover{
+    transform: scale(1.05);
+}
+#container-3 .boxes > div .img-box{
+    height: 45%;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-3 .boxes > div .img-box img{
+    height: 70px;
+    width: 70px;
+}
+#container-3 .boxes > div .inner-matter{
+    padding: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: system-ui;
+}
+
+
+
+#container-4{
+    position: absolute;
+    top: 1800px;
+    left: 0px;
+    margin-top: 50px;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#container-4 h1{
+    position: absolute;
+    top: 20px;      
+    margin-left: 10px;
+    font-size: 50px;
+}
+#container-4 h1::before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: orange;
+}
+
+#container-4 .matter-container-2{
+    position: absolute;
+    top:140px;
+    padding-left: 10px;
+    height: 300px;
+    width: 50vw;
+    background-color: #eee;
+}
+#container-4 .matter-container-2 h2{
+    font-size: 45px;
+    text-align: center;
+}
+#container-4 .matter-container-2::before{
+    content: "Folktel is startup which is growing it's roots everyday and this startup is encumbered in Banglore,India.Its main motive and goal is to promote arts and crafts in our culture and they also wants many skills related domain should come up ahead so that it boosts the network of art , craft and design. It is a podium where all the enthusiastic and energtic charged youths of the natioj should come up and showcase their talent and skills and we will surely admire it and also we will provide credit to them. Here all the artists, creators, painters and all the crazy young youth who that zeal and cupdity to accomplish their goals.";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 150px;
+    width: 80vw;
+    background-color: #fff;
+    padding-left: 20px;
+    box-shadow: 0px 0px 5px #888;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui;
+}
+
+
+#container-5{
+    position: absolute;
+    top: 2450px;
+    left: 0px;
+    height: 300px;
+    width: 100vw;
+}
+#container-5 h1{
+    position: absolute; 
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);    
+    margin-left: 10px;
+    font-size: 50px;
+}
+#container-5 h1::before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: orange;
+}
+
+#container-5 .main-box{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}   
+#container-5 .sub-slider{
+    height: 100%;
+    width: 2500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#container-5 .sub-slider > div{
+    height: 90%;
+    width: 240px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px #ddd;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+#container-5 .sub-slider > div:hover{
+    transform: scale(1.08);
+}
+#container-5 .main-box::-webkit-scrollbar {
+    height: 12px;
+}
+
+
+#container-5 .sub-slider > div .img-box{
+    height: 45%;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-5 .sub-slider > div .img-box img{
+    height: 70px;
+    width: 70px;
+}
+#container-5 .sub-slider > div .inner-matter{
+    padding: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: system-ui;
+}
+
+
+#container-6{
+    position: absolute;
+    top: 2850px;
+    left: 0px;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-6 h1{
+    position: absolute; 
+    top: 0px; 
+    left: 50%;
+    transform: translateX(-50%);    
+    margin-left: 10px;
+    font-size: 50px;
+}
+#container-6 h1::before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: orange;
+}
+#container-6 p{
+    text-align: center;
+    font-size: 20px;
+    width: 90vw;
+}
+
+
+#container-7{
+    position: absolute;
+    top: 3300px;
+    left: 0px;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#container-7 h1{
+    position: absolute; 
+    top: -80px; 
+    left: 50%;
+    transform: translateX(-50%);    
+    margin-left: 10px;
+    font-size: 50px;
+}
+#container-7 h1::before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: orange;
+}
+#container-7 div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-7 .img_svg img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#container-7 .form-box form{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    box-shadow: 0px 0px 5px #999;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#container-7 .form-box form input,
+#container-7 .form-box form textarea{
+    height: 35px;
+    width:400px;
+    resize:none;
+    outline: none;
+    margin: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+#container-7 .form-box form textarea{
+    height: 180px;
+}
+#container-7 .form-box form input[type="submit"]{
+    background-color: orange;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#container-7 .form-box form input[type="submit"]:hover{
+    background-color: rgb(206, 134, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
